@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Calcular Números Primos</title>
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #512c3b, #537483);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Título con neón */
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 15px rgba(80, 193, 186, 0.73), 0 0 30px rgba(193, 132, 197, 0.8);
+            margin-bottom: 50px;
+            text-align: center;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+        </style>
+</head>
+<body>
+<h1>Ingrese el rango para calcular los números primos</h1>
+<form action="calcularPrimos" method="post">
+    <label for="inicio">Inicio del rango:</label>
+    <input type="number" id="inicio" name="inicio" required>
+    <br><br>
+    <label for="fin">Fin del rango:</label>
+    <input type="number" id="fin" name="fin" required>
+    <br><br>
+    <button type="submit">Calcular Números Primos</button>
+</form>
+</body>
+</html>
